@@ -1,0 +1,39 @@
+.carousel {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.leiaute-redes_sociais {
+    text-align: center;
+}
+
+.leiaute-redes_sociais h4 {
+    margin-top: 5px;
+}
+
+.leiaute-redes_sociais img {
+    opacity: 70%;
+}
+
+.leiaute-redes_sociais img:hover {
+    opacity: 100%;
+}
+
+
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 400px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 400px;
+}
+
+.gmap_iframe {
+    height: 400px !important;
+}

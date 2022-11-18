@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mão na Roda - Pizzaria e Choperia - Menu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.css">
+    <script script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/leiaute_cab_rod.css">
+    <link rel="stylesheet" href="css/componentes_menu.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/leiaute_corpo_pedido.css">
+</head>
+
+<body>
+    <header class="leiaute-cabecalho">
+        <div class="container-fluid p-2">
+            <div class="row">
+                <div class="cabecalho-esquerda col-9">
+                    <img src="imagens/logo.png" alt="MaoNaRodaLogo">
+                    <h6 class="dias-funcionamento">Ter a Quinta e Domingo: 18:30 até 23:30 | Sex e Sáb: 18:30 até 00h
+                    </h6>
+                </div>
+                <div class="cabecalho-direita col-md-3">
+                    <a
+                        href="https://www.google.com/maps/place/Mão+na+Roda+Pizzaria+Chopperia/@-23.5071215,-46.5576837,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce5f09f052ff27:0x60d46df573fc679d!8m2!3d-23.5071215!4d-46.555495"><img
+                            src="imagens/pin.png" alt="pin">
+                    </a>
+                    <p>Av. Caetano Zamataro, 411
+                        Vila Zamataro, Guarulhos - SP, 07032-040</p>
+                    <img src="imagens/telefone_icone.png" alt="fone">
+                    <p>(11)2421-5066 | (11)2425-4753</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="g col-4"></div>
+                <div class="w col-4"></div>
+                <div class="r col-4"></div>
+            </div>
+        </div>
+    </header>
+    <nav class="menu">
+        <div class="container-fluid p-2">
+            <div class="row">
+                <div class="home col-3">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="cardapio col-3">
+                    <a href="index_menu.html">Menu</a>
+                </div>
+                <div class="pedido col-3">
+                    <a href="index_pedido.html"><strong>Meu Carrinho</strong></a>
+                </div>
+                <div class="sup col-3">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#JanelaModal">Suporte</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="JanelaModal" class="modal suporte">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title">Suporte</h1>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h3>Caso tenha algum problema entre em contato conosco e relate seu problema!</h3>
+                </div>
+
+                <div class="modal-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4"><a
+                                    href="mailto:suportemaonarodapizzaria@gmail.com?subject=Problemas%20com%20o%20Site!&body=Relate%20seu%20problema%3A"><img
+                                        src="imagens/email.png" width="60" alt=""></a></div>
+                            <div class="col-4"><a href="https://www.instagram.com/maonaroda_guarulhos/"><img
+                                        src="imagens/insta.png" width="60" alt=""></a></div>
+                            <div class="col-4"><a href="https://api.whatsapp.com/send?phone=551124215066"><img
+                                        src="imagens/whass.png" width="60" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-3 mt-4">
+        <div class="row">
+            <div class="leiaute-titulo carrinho col-8">
+                <h2>Seu Pedido</h2>
+                <img src="./imagens/carrinho.png" width="40" alt="carrinho de compras">
+                <span>0</span>
+            </div>
+            <div class="leiaute-total col-4">
+                <div class="row justify-content-center">
+                    <h3>Total</h3>
+                    <div class="col-6 val_total">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="produtos-carrinho">
+
+        </div>
+    </div>
+
+    <div class="container mt-4 obs-cliente">
+        <div class="row justify-content-center">
+            <h5>Observações:</h5>
+            <input type="text" name="observacao" id="observacao"
+                placeholder="exemplo: 'quero que a pizza seja sem cebola' *">
+            <p>*Esse item não é obrigatório.</p>
+        </div>
+    </div>
+
+    <div class="container mt-3 form-pagamento">
+        <div class="row justify-content-center">
+            <h2>Forma de Pagamento</h2>
+            <div class="row selecao p-4">
+                <div class="col-4"><input type="radio" name="form-pag" id="form-pag" value="debito" checked> Cartão de
+                    Débito</div>
+                <div class="col-4"><input type="radio" name="form-pag" id="form-pag" value="credito"> Cartão de Crédito
+                </div>
+                <div class="col-4"><input type="radio" name="form-pag" id="form-pag" value="pix"> PIX</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 finalizacao">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="index_menu2.html">Voltar ao Menu</a>
+            </div>
+            <div class="col-md-4 mt-2">
+                <a href="https://wa.link/0gdk8u">Fazer uma Reserva</a>
+            </div>
+            <div class="col-md-4 mt-2">
+                <a href="" data-bs-target="#JanelaModal2" data-bs-toggle="modal">Finalizar Pedido</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="JanelaModal2" class="modal fim-pedido">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Finalizando o Pedido...</h3>
+
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h5>Tem certeza que deseja finalizar o pedido?</h5>
+                </div>
+
+                <div class="modal-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6"><a onclick="enviarPedido()">Sim</a></div>
+                            <div class="col-6"><a href="" data-bs-dismiss="modal">Não</a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="leiaute-rodape container-fluid mt-5">
+        <div class="col-12">
+            <p>&copy; - todos os direitos reservados</p>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

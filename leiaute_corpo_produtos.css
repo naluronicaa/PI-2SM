@@ -1,0 +1,35 @@
+.cab-dir img{
+    float: left;
+    margin-right: 10px;
+    opacity: 70%;
+}
+
+.cab-dir img:hover{
+    opacity: 100%;
+}
+
+.cab-dir {
+    text-align: left;
+}
+
+.cab-esq {
+    text-align:center;
+}
+.cab-esq a{
+    text-decoration: none;
+    color: #000;
+}
+.ad-carrinho a{
+    float: left;
+    text-decoration: none;
+    color: #000;
+}
+
+.ad-carrinho img{
+    margin-left: 10px;
+}
+
+.obs {
+    text-align: center;
+}
+
